@@ -1,0 +1,31 @@
+.label {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 1px;
+  margin-bottom: 5px;
+  cursor: pointer;
+
+  &.disabled {
+    cursor: default;
+    color: #bac4c4;
+  }
+}
+
+.select:global(:not(.ant-select-customize-input)) {
+  width: 100%;
+  border-radius: 5px;
+  font-size: 15px;
+
+  & :global {
+    .ant-select-selector {
+      height: 42px !important;
+      border-radius: 5px !important;
+    }
+
+    .ant-select-selection-item {
+      padding-top: 5px !important;
+    }
+  }
+}

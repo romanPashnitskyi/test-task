@@ -1,0 +1,43 @@
+.field {
+  margin-top: 7px;
+  margin-bottom: 15px;
+  width: 100%;
+
+  &.noMargin {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  label {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 1px;
+  }
+}
+
+.input {
+  border: 1px solid #e5ebeb;
+  border-radius: 5px;
+  min-height: 42px;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.3px;
+
+
+  &.error {
+    border-color: #ff4d4f;
+  }
+
+  &::placeholder {
+    color: #bac4c4;
+    font-size: 15px;
+  }
+}
+
+.errorMessage {
+  color: #ff4d4f;
+  font-size: 12px;
+  margin-left: 1px;
+  margin-top: 3px;
+}

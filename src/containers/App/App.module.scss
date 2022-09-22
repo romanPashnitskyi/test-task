@@ -1,0 +1,36 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  background: #cfd8dc;
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+
+    li {
+      padding-right: 30px;
+
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+  nav li {
+    padding: 0.5rem 0;
+  }
+}
